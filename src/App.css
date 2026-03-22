@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1a237e;
+  --color-saffron: #ff9933;
+  --color-forest: #138808;
+  --color-chakra-blue: #000080;
+
+  --color-background: #0f1117;
+  --color-foreground: #e8eaf0;
+  --color-muted-foreground: #6b7280;
+  --color-card: #1a1d27;
+  --color-border: #2a2d3a;
+  --color-primary: #ff9933;
+  --color-primary-foreground: #0f1117;
+  --color-ring: #ff9933;
+
+  --animate-scale-tip: scale-tip 1.5s ease-in-out infinite;
+  --animate-legal-pulse: legal-pulse 1s ease-in-out infinite;
+  --animate-chakra-spin: chakra-spin 30s linear infinite;
+  --animate-float-up: float-up 0.3s ease-out;
+}
+
+@keyframes scale-tip {
+  0%, 100% { rotate: -10deg; }
+  50% { rotate: 10deg; }
+}
+
+@keyframes legal-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes chakra-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.chat-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2d3a transparent;
+}
