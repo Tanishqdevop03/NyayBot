@@ -1,16 +1,46 @@
-# React + Vite
+NyayaBot — Indian Legal Assistant 🇮🇳
+A purpose-built AI chatbot for Indian legal queries, built with React + Vite and powered by OpenRouter (GPT-4o mini).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What it does
+NyayaBot helps users understand Indian laws, legal rights, and procedures in simple language. Ask it about FIR filing, bail rights, RTI, consumer complaints, property disputes, domestic violence protection, and more.
 
-Currently, two official plugins are available:
+Features
+AI-powered responses via OpenRouter API (GPT-4o mini) trained on Indian legal context
+Hinglish support — responds in the same language the user writes in
+Out-of-scope detection — politely refuses non-legal questions with a dedicated UI component
+Quick suggestion chips — shown on first load to guide new users
+Legal-themed loading state — animated Scales of Justice instead of a generic spinner
+Error state with retry — handles API failures gracefully with a one-click retry
+Message timestamps — every message shows time sent
+Copy button — copy any bot response to clipboard
+Scroll-to-bottom button — appears when user scrolls up in long conversations
+Responsive design — disclaimer text collapses to an info icon tooltip on mobile
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Design Details
+Spinning Ashoka Chakra as background
+Tricolor (saffron / white / green) bars at top and bottom
+Scale of Justice icon in the navbar
+Hindi subtitle: भारतीय कानूनी सहायक
 
-## React Compiler
+Tech Stack
+React 19
+Vite 5
+Tailwind CSS v4
+Lucide React (icons)
+OpenRouter API (GPT-4o mini)
+Deployed on Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Project Structure
+src/
+├── components/
+│   ├── ChatUi.jsx          # Main chat layout
+│   ├── ChatMessage.jsx     # Message bubble with timestamp + copy
+│   ├── LegalLoader.jsx     # Animated scales of justice loader
+│   ├── OutOfScopeMessage.jsx  # Shown for non-legal queries
+│   ├── ErrorMessage.jsx    # API error state with retry
+│   └── AshokaChakra.jsx    # SVG background element
+├── services/
+│   └── aiService.js        # OpenRouter API call
+└── utils/
+    └── prompt.js           # System prompt for the AI
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
