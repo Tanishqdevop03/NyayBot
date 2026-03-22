@@ -1,6 +1,17 @@
 NyayaBot — Indian Legal Assistant 🇮🇳
 A purpose-built AI chatbot for Indian legal queries, built with React + Vite and powered by OpenRouter (GPT-4o mini).
 
+Why i chose this topic : 
+I chose this topic because I observed a very real problem in India — many people are not aware of basic legal procedures and government policies. Due to this lack of awareness, even for small issues, they directly approach a lawyer, which often leads to unnecessary expenses and dependency.
+In many cases, people panic because they don’t know their rights or the correct steps to take. For example, in situations like filing an FIR, dealing with consumer complaints, or even facing a false or fraudulent case, individuals often feel lost and immediately rush to legal professionals without understanding the basics.
+I built this AI Legal Assistant to bridge that gap. The goal is not to replace lawyers, but to provide initial guidance — helping users understand:
+what their situation means legally
+what steps they should take
+what documents are required
+and what their basic rights are
+This can save time, reduce panic, and help people make more informed decisions before consulting a lawyer.
+So, I chose this topic because it solves a real-world problem, has strong social impact, and demonstrates how AI can be used responsibly to make legal information more accessible to common people.
+
 What it does
 NyayaBot helps users understand Indian laws, legal rights, and procedures in simple language. Ask it about FIR filing, bail rights, RTI, consumer complaints, property disputes, domestic violence protection, and more.
 
